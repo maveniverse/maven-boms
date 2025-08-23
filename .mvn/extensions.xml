@@ -2,7 +2,7 @@
 <extensions>
     <extension>
         <groupId>eu.maveniverse.maven.nisse</groupId>
-        <artifactId>extension3</artifactId>
-        <version>0.1.1-SNAPSHOT</version>
+        <artifactId>extension</artifactId>
+        <version>0.6.0</version>
     </extension>
 </extensions>

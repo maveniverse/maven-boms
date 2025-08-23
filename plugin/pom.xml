@@ -14,7 +14,7 @@
   <parent>
     <groupId>eu.maveniverse.maven.maven-boms</groupId>
     <artifactId>maven-boms</artifactId>
-    <version>0.1.0-SNAPSHOT</version>
+    <version>${nisse.file.mavenVersion}-01-SNAPSHOT</version>
   </parent>
 
   <artifactId>plugin</artifactId>
@@ -45,6 +45,7 @@
             </goals>
             <phase>package</phase>
             <configuration>
+              <attach>true</attach>
               <bomName>Maven ${maven3Version} plugin BOM</bomName>
               <addVersionProperties>true</addVersionProperties>
               <usePropertiesForVersion>true</usePropertiesForVersion>
