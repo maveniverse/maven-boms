@@ -11,4 +11,4 @@ jobs:
     name: Verify
     uses: maveniverse/parent/.github/workflows/ci.yml@release-41
     with:
-      maven-test-run: 'false'
+      maven-test-run: false
