@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright (c) 2023-2024 Maveniverse Org.
+    All rights reserved. This program and the accompanying materials
+    are made available under the terms of the Eclipse Public License v2.0
+    which accompanies this distribution, and is available at
+    https://www.eclipse.org/legal/epl-v20.html
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>eu.maveniverse.maven.parent</groupId>
+    <artifactId>parent</artifactId>
+    <version>41</version>
+  </parent>
+
+  <groupId>eu.maveniverse.maven.maven-boms</groupId>
+  <artifactId>maven-boms</artifactId>
+  <version>0.1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>${project.groupId}:${project.artifactId}</name>
+  <description>Maven BOMs.</description>
+
+  <url>https://www.maveniverse.eu/maven-boms</url>
+
+  <licenses>
+    <license>
+      <name>EPL-2.0</name>
+      <url>https://www.eclipse.org/legal/epl-2.0/</url>
+    </license>
+  </licenses>
+
+  <modules>
+    <module>skinny</module>
+    <module>fat</module>
+    <module>plugin</module>
+  </modules>
+
+  <scm>
+    <connection>scm:git:git@github.com:maveniverse/maven-boms.git</connection>
+    <developerConnection>scm:git:git@github.com:maveniverse/maven-boms.git</developerConnection>
+    <tag>HEAD</tag>
+    <url>https://github.com/maveniverse/maven-boms</url>
+  </scm>
+
+  <issueManagement>
+    <system>Github</system>
+    <url>https://github.com/maveniverse/maven-boms/issues</url>
+  </issueManagement>
+
+  <ciManagement>
+    <system>Github</system>
+    <url>https://github.com/maveniverse/maven-boms/actions</url>
+  </ciManagement>
+
+  <properties>
+    <project.build.outputTimestamp>2025-08-23T14:24:56Z</project.build.outputTimestamp>
+
+    <!--
+    Build time: latest stable Maven and latest Java LTS.
+    Run time: "not so old" Maven (3.6.3+) and latest Java LTS.
+    -->
+    <maven.compiler.release>8</maven.compiler.release>
+    <requireRuntimeMavenVersion.range>[3.9,)</requireRuntimeMavenVersion.range>
+
+    <!-- Maven 3 version -->
+    <maven3Version>3.9.11</maven3Version>
+  </properties>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>eu.maveniverse.maven.plugins</groupId>
+          <artifactId>bom-builder3</artifactId>
+          <version>1.2.1</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>
