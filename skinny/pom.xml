@@ -27,67 +27,67 @@
     <dependency>
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-plugin-api</artifactId>
-      <version>${maven3Version}</version>
+      <version>${nisse.file.mavenVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-builder-support</artifactId>
-      <version>${maven3Version}</version>
+      <version>${nisse.file.mavenVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-model</artifactId>
-      <version>${maven3Version}</version>
+      <version>${nisse.file.mavenVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-model-builder</artifactId>
-      <version>${maven3Version}</version>
+      <version>${nisse.file.mavenVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-core</artifactId>
-      <version>${maven3Version}</version>
+      <version>${nisse.file.mavenVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-settings</artifactId>
-      <version>${maven3Version}</version>
+      <version>${nisse.file.mavenVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-settings-builder</artifactId>
-      <version>${maven3Version}</version>
+      <version>${nisse.file.mavenVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-artifact</artifactId>
-      <version>${maven3Version}</version>
+      <version>${nisse.file.mavenVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-resolver-provider</artifactId>
-      <version>${maven3Version}</version>
+      <version>${nisse.file.mavenVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-repository-metadata</artifactId>
-      <version>${maven3Version}</version>
+      <version>${nisse.file.mavenVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-slf4j-provider</artifactId>
-      <version>${maven3Version}</version>
+      <version>${nisse.file.mavenVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-embedder</artifactId>
-      <version>${maven3Version}</version>
+      <version>${nisse.file.mavenVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-compat</artifactId>
-      <version>${maven3Version}</version>
+      <version>${nisse.file.mavenVersion}</version>
     </dependency>
   </dependencies>
 
@@ -105,7 +105,7 @@
             <phase>package</phase>
             <configuration>
               <attach>true</attach>
-              <bomName>Maven ${maven3Version} skinny BOM</bomName>
+              <bomName>Maven ${nisse.file.mavenVersion} skinny BOM</bomName>
               <addVersionProperties>true</addVersionProperties>
               <usePropertiesForVersion>true</usePropertiesForVersion>
               <directDependencies>CURRENT_PROJECT</directDependencies>

@@ -66,9 +66,6 @@
     -->
     <maven.compiler.release>8</maven.compiler.release>
     <requireRuntimeMavenVersion.range>[3.9,)</requireRuntimeMavenVersion.range>
-
-    <!-- Maven 3 version -->
-    <maven3Version>${nisse.file.mavenVersion}</maven3Version>
   </properties>
 
   <build>
