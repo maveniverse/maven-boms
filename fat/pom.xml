@@ -14,7 +14,7 @@
   <parent>
     <groupId>eu.maveniverse.maven.maven-boms</groupId>
     <artifactId>maven-boms</artifactId>
-    <version>${nisse.file.mavenVersion}-01-SNAPSHOT</version>
+    <version>${nisse.file.mavenVersion}-01</version>
   </parent>
 
   <artifactId>fat</artifactId>

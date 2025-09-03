@@ -19,7 +19,7 @@
 
   <groupId>eu.maveniverse.maven.maven-boms</groupId>
   <artifactId>maven-boms</artifactId>
-  <version>${nisse.file.mavenVersion}-01-SNAPSHOT</version>
+  <version>${nisse.file.mavenVersion}-01</version>
   <packaging>pom</packaging>
 
   <name>${project.groupId}:${project.artifactId}</name>
